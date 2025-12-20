@@ -1,0 +1,12 @@
+[Unit]
+Description=Racecapture
+After=basic.target
+
+[Service]
+Type=simple
+User=pi
+Restart=on-failure
+ExecStart=LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libmount.so.1 /opt/racecapture/run_racecapture_rpi.sh -- -c graphics:show_cursor:0 -a -m cursor -c kivy:keyboard_mode:systemandmulti
+
+[Install]
+WantedBy=multi-user.target
