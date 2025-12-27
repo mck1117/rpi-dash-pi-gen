@@ -65,3 +65,8 @@ dtoverlay=gpio-poweroff,gpiopin=2,active_low=1
 
 # Enable UART2 for STM32 communication
 dtoverlay=uart2
+
+# Enable LM75 temperature sensors
+dtparam=i2c_arm=on
+dtoverlay=i2c-sensor,lm75,addr=0x48
+dtoverlay=i2c-sensor,lm75,addr=0x49
