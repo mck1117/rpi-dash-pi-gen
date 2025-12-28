@@ -1,0 +1,12 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+        /* Change the phy max-speed to 100 Mbps */
+        fragment@0 {
+                target = <&phy1>;
+                __overlay__ {
+                        max-speed = <100>;
+                };
+        };
+};
