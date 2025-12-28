@@ -29,7 +29,7 @@ arm_boost=1
 otg_mode=1
 
 [cm5]
-dtoverlay=dwc2,dr_mode=host
+dtoverlay=dwc2,dr_mode=peripheral
 dtoverlay=vc4-kms-dsi-ili9881-7inch,dsi1,rotation=270
 
 [all]
