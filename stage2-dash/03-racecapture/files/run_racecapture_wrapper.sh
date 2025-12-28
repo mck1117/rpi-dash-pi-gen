@@ -1,0 +1,3 @@
+#!/bin/bash
+
+LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libmount.so.1 /opt/racecapture/run_racecapture_rpi.sh -- -c graphics:show_cursor:0 -a -m cursor -c kivy:keyboard_mode:systemandmulti -c graphics:rotation:90
