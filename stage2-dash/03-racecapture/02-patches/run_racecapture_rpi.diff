@@ -1,0 +1,11 @@
+--- stage2-dash.orig/rootfs/opt/racecapture/run_racecapture_rpi.sh
++++ stage2-dash/rootfs/opt/racecapture/run_racecapture_rpi.sh
+@@ -44,7 +44,7 @@ while
+     mv $LOGFILE ${LOGFILE}_last
+   fi
+ 
+-  ./race_capture $APPARGS >> $LOGFILE 2>&1
++  ./race_capture $APPARGS 2>&1 | tee -a $LOGFILE
+ 
+   exitstatus=$?
+   if [[ $exitstatus -eq 0 || $WATCHDOG -ne 1 ]]; then
