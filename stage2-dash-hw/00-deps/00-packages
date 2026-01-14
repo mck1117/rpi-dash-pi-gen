@@ -1,1 +1,2 @@
 can-utils lm-sensors
+libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev
