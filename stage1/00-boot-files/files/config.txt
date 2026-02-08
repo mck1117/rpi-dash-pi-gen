@@ -73,3 +73,6 @@ dtoverlay=uart4
 dtparam=i2c_arm=on
 dtoverlay=i2c-sensor,lm75,addr=0x48
 dtoverlay=i2c-sensor,lm75,addr=0x49
+
+# GPS PPS input
+dtoverlay=pps-gpio,gpiopin=26
