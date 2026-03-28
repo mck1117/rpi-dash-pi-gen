@@ -1,3 +1,4 @@
 can-utils lm-sensors libsensors-dev
 libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev
 gpsd libgps-dev pps-tools
+ffmpeg
