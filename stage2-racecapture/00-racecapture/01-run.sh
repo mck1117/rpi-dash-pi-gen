@@ -3,7 +3,7 @@
 RC_PACKAGE=files/racecapture_linux_raspberrypi_2.17.1.deb
 
 if [ ! -f ${RC_PACKAGE} ]; then
-    wget -O "$RC_PACKAGE" https://autosportlabs-software.s3.us-west-2.amazonaws.com/racecapture_linux_raspberrypi_2.17.1.deb
+    wget `curl -s 'https://podium.live/api/v1/applications/1/latest.json?expand=1&platform=rpi' | jq -r .release.url` -O "$RC_PACKAGE"
 fi
 
 dpkg-deb -x $RC_PACKAGE ${ROOTFS_DIR}
