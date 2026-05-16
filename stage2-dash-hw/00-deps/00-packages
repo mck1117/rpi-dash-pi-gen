@@ -2,3 +2,4 @@ can-utils lm-sensors libsensors-dev
 libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libgles2-mesa-dev libdrm-dev libgbm-dev
 gpsd libgps-dev pps-tools python3-gps
 ffmpeg
+stm32flash
